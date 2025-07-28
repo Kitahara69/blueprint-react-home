@@ -1,0 +1,99 @@
+
+/* Sidebar styles */
+.sidebar {
+  width: 60px; /* Default collapsed width */
+  background-color: #0E9ED3;
+  color: white;
+  padding: 20px 0;
+  position: relative;
+  transition: width 0.3s ease; /* Smooth transition for width changes */
+  flex-shrink: 0; /* Prevent sidebar from shrinking when main content grows */
+}
+
+.sidebar.expanded {
+  width: 200px; /* Expanded width */
+}
+
+.sidebar-toggle {
+  position: absolute;
+  top: 20px;
+  right: -10px; /* Position slightly outside for visual effect */
+  background: #0ea5e9;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 10; /* Ensure toggle button is above other elements */
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0 0 0;
+}
+
+.sidebar-item {
+  margin: 0;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  gap: 12px;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow content */
+}
+
+.sidebar-icon {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+/* Style for the text label within the sidebar link */
+.sidebar-label {
+  opacity: 0; /* Hidden by default */
+  width: 0; /* Collapsed width by default */
+  overflow: hidden;
+  transition: opacity 0.3s ease, width 0.3s ease; /* Smooth transition for label visibility */
+}
+
+.sidebar.expanded .sidebar-label {
+  opacity: 1; /* Visible when expanded */
+  width: auto; /* Auto width when expanded */
+  transition: opacity 0.3s ease 0.1s, width 0.3s ease 0.1s; /* Slight delay for smoother reveal */
+}
+
+.sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+}
+
+/* Responsive styles - removed problematic media query for sidebar width */
+@media (max-width: 768px) {
+  .feedback-container {
+    padding: 20px;
+  }
+
+  .feedback-form {
+    padding: 24px;
+  }
+}
+

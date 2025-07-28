@@ -1,0 +1,21 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  background-color: #F4FCFF;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.page-content-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}

@@ -1,0 +1,78 @@
+.recently-learned {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 16px;
+}
+
+.recently-learned h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 16px 0;
+}
+
+.lessons-list {
+  margin-bottom: 20px;
+}
+
+.lesson-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px;
+  border-radius: 8px;
+  background: #E9F9FF;
+  border: 1px solid #e0f2fe;
+  margin-bottom: 8px;
+}
+
+.lesson-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.lesson-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #0E9ED3;
+  margin-bottom: 4px;
+}
+
+.lesson-subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0E9ED3;
+  margin-bottom: 6px;
+}
+
+.lesson-rating {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  font-size: 20px;
+  opacity: 0.3;
+}
+
+.star.filled {
+  opacity: 1;
+}
+
+.trophy-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 16px;
+}
+
+.trophy-image {
+  max-width: 350px;
+  height: auto;
+}
+

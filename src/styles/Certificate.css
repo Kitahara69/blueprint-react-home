@@ -1,0 +1,211 @@
+/* Certificate.css */
+
+/* New wrapper for the entire Certificate component */
+.certificate-wrapper {
+  max-width: 600px; /* Align with other components' max-width */
+  margin: 0 auto 24px auto; /* Center and add margin-bottom */
+  font-family: 'Inter', sans-serif; /* Consistent font */
+}
+
+/* Style for the section title (moved outside the container) */
+.certificate-section-title {
+  font-size: 20px; /* Smaller font size as it's a section header */
+  color: #0066cc; /* Consistent blue color */
+  font-weight: 700;
+  margin-bottom: 10px; /* Space between title and the container */
+  padding: 0 5px; /* Small padding to align with container content */
+}
+
+.certificate-container {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* margin-bottom is now handled by .certificate-wrapper or the parent component */
+}
+
+.certificate-locked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.lock-icon {
+  width: 80px;
+  height: 80px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.certificate-locked-text {
+  font-size: 16px;
+  color: #666;
+  margin: 0 0 20px 0;
+}
+
+.take-test-button {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.take-test-button:hover {
+  background: #0052a3;
+}
+
+.certificate-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.certificate-document {
+  background: white;
+  border: 3px solid #0066cc;
+  border-radius: 15px;
+  padding: 50px 30px;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-document::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 1px solid #0066cc;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.certificate-header {
+  color: #0066cc;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.certificate-badge {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #FFB74D, #FF9800);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+  margin: 0 auto 25px;
+  box-shadow: 0 4px 15px rgba(255, 183, 77, 0.3);
+}
+
+.certificate-title-main {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0 10px;
+}
+
+.certificate-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.certificate-document-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 20px 0 8px 0;
+}
+
+.certificate-recipient {
+  font-size: 22px;
+  color: #0066cc;
+  font-weight: 600;
+  margin: 15px 0;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.certificate-completion {
+  font-size: 14px;
+  color: #666;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.certificate-footer {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #999;
+}
+
+.signature-line {
+  border-top: 1px solid #ccc;
+  width: 150px;
+  margin: 20px auto 8px;
+}
+
+.signature-text {
+  font-size: 11px;
+  color: #666;
+}
+
+.print-pdf-button {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.print-pdf-button:hover {
+  background: #0052a3;
+}
+
+/* Responsive adjustments for the wrapper and section title */
+@media (max-width: 768px) {
+  .certificate-wrapper {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificate-wrapper {
+    padding: 0 10px;
+  }
+
+  .certificate-section-title {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+}

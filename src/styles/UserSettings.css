@@ -1,0 +1,27 @@
+/* Outer wrapper for the entire settings page, often matching layout's page-content */
+.user-settings-page {
+  /* Remove min-height: 100vh; from here if you want it to scroll within the layout's scroll area.
+     The layout's .page-content now handles the scrollable area.
+     Keep padding and font-family. */
+  padding: 24px;
+  /* background-color is typically set on the layout's page-content now */
+  /* background-color: #f8fafc; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* Add any specific styling for just the settings page content itself */
+}
+
+/* Inner container for content to control max-width and centering */
+.user-settings-container {
+  max-width: 800px;
+  margin: 0 auto;
+  /* You might need additional padding-bottom if content gets cut off at the very end */
+  padding-bottom: 50px; /* Example: ensure space for content that might be hidden by scrollbar */
+}
+
+/* Styling for the main Settings title */
+.user-settings-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 32px;
+}

@@ -1,0 +1,39 @@
+/* UserAchievements.css */
+
+.user-achievements-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Inter', sans-serif; /* Assuming Inter font is desired */
+}
+
+.user-achievements-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 24px;
+  text-align: center; /* Center the title for better aesthetics */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .user-achievements-container {
+    padding: 15px;
+  }
+
+  .user-achievements-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-achievements-container {
+    padding: 10px;
+  }
+
+  .user-achievements-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}

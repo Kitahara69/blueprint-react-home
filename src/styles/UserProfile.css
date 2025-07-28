@@ -1,0 +1,66 @@
+/* UserProfile.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  background-color: #F4FCFF;
+  color: #333;
+  line-height: 1.6;
+}
+
+.user-profile {
+  flex: 1; /* Allows this component to grow and shrink within its parent */
+  min-height: 100vh;
+  background: #F4FCFF;
+  padding: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  width: 100%; /* Ensure it takes full width of its parent */
+  overflow-x: hidden; /* Prevent horizontal scroll within this component */
+}
+
+.profile-container {
+  max-width: 1200px;
+  width: 100%; /* Ensure it takes full width of its parent, up to max-width */
+  margin: 0 auto;
+  display: grid;
+  /* Use minmax(0, 1fr) to allow the left column to shrink to 0 if necessary,
+     preventing overflow if the available space becomes very small */
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 24px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  /* Ensure content within left-section can wrap or shrink */
+  min-width: 0; /* Allow flex item to shrink below its content size */
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  /* Ensure content within right-section can wrap or shrink */
+  min-width: 0; /* Allow flex item to shrink below its content size */
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    gap: 16px;
+  }
+  
+  .user-profile {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .user-profile {
+    padding: 10px;
+  }
+}

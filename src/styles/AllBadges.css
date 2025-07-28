@@ -1,0 +1,140 @@
+/* AllBadges.css */
+
+/* New wrapper for the entire AllBadges component */
+.all-badges-wrapper {
+  max-width: 600px; /* Adjust as needed, or remove if parent handles width */
+  margin: 0 auto 24px auto; /* Center and add margin-bottom */
+  font-family: 'Inter', sans-serif; /* Consistent font */
+}
+
+.achievements-container {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* margin-bottom is now handled by .all-badges-wrapper or the parent of this component */
+}
+
+.achievements-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Space between header and the container */
+  padding: 0 5px; /* Small padding to align with container content */
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.badges-subtitle {
+  font-size: 20px;
+  color: #0066cc;
+  font-weight: 700;
+}
+
+.progress-indicator {
+  font-size: 16px;
+  color: #0066cc;
+}
+
+.badges-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 320px; /* Fixed height with scroll */
+  overflow-y: auto;
+  padding-right: 8px; /* Space for scrollbar */
+}
+
+.badges-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.badges-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.badges-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.badges-list::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.badge-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+}
+
+.badge-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.badge-icon.completed {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+}
+
+.badge-icon.locked {
+  background: #e0e0e0;
+  color: #999;
+}
+
+.badge-content {
+  flex: 1;
+}
+
+.badge-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 4px 0;
+}
+
+.badge-title.locked {
+  color: #999;
+}
+
+.badge-description {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.badge-description.locked {
+  color: #999;
+}
+
+/* Responsive adjustments for the wrapper and header */
+@media (max-width: 768px) {
+  .all-badges-wrapper {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .all-badges-wrapper {
+    padding: 0 10px;
+  }
+
+  .achievements-header {
+    flex-direction: column; /* Stack items on small screens */
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+
+  .badges-subtitle {
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,138 @@
+/* Index Page Styles */
+.homepage {
+  min-height: 100vh;
+  background-color: #D8F5FF;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 64px 16px;
+}
+
+.hero-container {
+  max-width: 1152px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hand-signs-container {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.hand-signs-image {
+  max-width: 700px;
+  height: auto;
+}
+
+.hero-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #0060A4;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.125rem;
+  color: #374151;
+  margin-bottom: 32px;
+  max-width: 512px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  background-color: white;
+  color: #0060A4;
+  border: 2px solid #0060A4;
+  border-radius: 9999px;
+  padding: 12px 32px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0284c7;
+  color: white;}
+
+/* Features Section */
+.features-section {
+  padding: 64px 16px;
+  background-color: #FBFDFF;
+}
+
+.features-container {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.features-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #0088BA;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.features-grid {
+  display: grid;
+  gap: 32px;
+  max-width: 896px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.feature-card {
+  background-color: white;
+  border: 1px solid #ceebff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+
+.feature-card-content {
+  padding: 32px;
+}
+
+.feature-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0060A4;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.feature-card-description {
+  color: #374151;
+  margin-bottom: 24px;
+}
+
+.feature-button {
+  background-color: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feature-button:hover {
+  background-color: #0284c7;
+}

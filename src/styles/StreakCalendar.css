@@ -1,0 +1,130 @@
+.streak-calendar {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 16px;
+}
+
+.calendar-header {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.nav-button {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.nav-button:hover {
+  background: #e5e7eb;
+  color: #333;
+}
+
+.header-selects {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  justify-content: center;
+}
+
+.month-select,
+.year-select {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+}
+
+.month-select:focus,
+.year-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.month-select {
+  min-width: 120px;
+}
+
+.year-select {
+  min-width: 80px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.calendar-day-header {
+  padding: 8px 4px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.calendar-day.has-day {
+  color: #333;
+}
+
+.calendar-day.empty-day {
+  color: transparent;
+  cursor: default;
+}
+
+.calendar-day.learning-day {
+  background: #0ea4e9bd;
+  color: white;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+.calendar-day.current-day {
+  background: #dce8ff;
+  border: 2px solid #008bcc;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+.calendar-day.current-day.learning-day {
+  background: #0ea4e9bd;
+  border: 2px solid #0ea5e9;
+}
+/*
+.calendar-day.has-day:hover:not(.empty-day) {
+  background: #dce8ff;
+}
+
+.calendar-day.learning-day:hover {
+  background: #2563eb;
+}*/
